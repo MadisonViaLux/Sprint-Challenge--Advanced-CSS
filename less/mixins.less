@@ -8,3 +8,19 @@
     color: @main-font-color;
     border: @main-border-color;
 }
+
+
+.buttonMode(@s, @c, @br, @b){
+    font-size: @s;
+    color: @c;
+    border-radius: @br;
+    border: @b;
+}
+
+.mobile-style{
+    @media @mobile{
+        max-width: 500px;
+        flex-direction: column;
+        justify-content: center;
+      }
+}

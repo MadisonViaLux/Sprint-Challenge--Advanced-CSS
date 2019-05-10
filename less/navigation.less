@@ -7,6 +7,9 @@
     background: @nav-bg;
     color: @nav-font;
     border: @nav-border;
+
+    .mobile-style();
+
 }
 
 h1{
@@ -26,4 +29,9 @@ a {
 
 .earth{
     border-radius: 5px;
+
+    @media @mobile{
+        width: 100%;
+    }
+
 }

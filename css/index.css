@@ -5,6 +5,13 @@
   color: #5E6164;
   border: #dee2e6;
 }
+@media (max-width: 700px) {
+  .mobile-style {
+    max-width: 500px;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -143,26 +150,44 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
+  max-width: 1000px;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
+@media (max-width: 700px) {
+  html,
+  body {
+    max-width: 500px;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+html h1,
+body h1,
+html h2,
+body h2,
+html h3,
+body h3,
+html h4,
+body h4,
+html h5,
+body h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
-h2 {
+html h2,
+body h2 {
   font-size: 3.2rem;
 }
-h3 {
+html h3,
+body h3 {
   font-size: 2.8rem;
 }
-p {
+html p,
+body p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-.container {
+html .container,
+body .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
@@ -174,6 +199,13 @@ p {
   background: #F6F6F6;
   color: #454A59;
   border: #F1F1F1;
+}
+@media (max-width: 700px) {
+  .TopBarNav {
+    max-width: 500px;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 h1 {
   font-size: 4.5rem;
@@ -189,6 +221,11 @@ a {
 }
 .earth {
   border-radius: 5px;
+}
+@media (max-width: 700px) {
+  .earth {
+    width: 100%;
+  }
 }
 footer {
   color: #22283B;
@@ -247,6 +284,22 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  font-weight: bold;
+  color: #5E6164;
+  border: #dee2e6;
+  padding: 1rem 2rem;
+  background-color: #23293B;
+  font-size: 1.8rem;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  transition-duration: 0.4s;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: orange;
+  color: black;
 }
 .home .walk .walk-img {
   width: 46%;

@@ -2,6 +2,8 @@
 
 .home {
 
+ 
+
   .font-style1();
 
   .intro {
@@ -62,7 +64,19 @@
       }
 
       .btn {
+        .font-style1();
+        .font-style2();
+        padding: 1rem 2rem;
+        background-color: @header-font-color;
+        .buttonMode(1.8rem, white, 5px, none);
+        transition-duration: 0.4s;
       }
+
+      .btn:hover{
+        background-color: orange;
+        color: black;
+      }
+
     }
 
     .walk-img {
